@@ -8,7 +8,7 @@ import AddStudent from './pages/AddStudent'
 import EditStudent from './pages/EditStudent'
 import Analysis from './pages/Analysis'
 import PrivateRoute from './components/PrivateRoute'
-import StudentDetails from './pages/studentDetails'
+import StudentDetails from './pages/StudentDetails';
 import Home from './components/Home/Home'
 import Students from './pages/Students'
 import Dashboards from './pages/Dashboards'
