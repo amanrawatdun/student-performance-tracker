@@ -22,9 +22,13 @@ connectDB(mongo_url)
 .catch((err)=>console.log(err))
 
 //middleware
-app.use(express.json())
-app.use(express.urlencoded(false))
-app.use(cors());
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+
+app.use(cors({
+  origin: 'https://student-performance-tracker-frontend.onrender.com',
+  credentials: true,
+}));
 
 
 
